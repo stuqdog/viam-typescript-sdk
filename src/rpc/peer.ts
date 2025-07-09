@@ -29,7 +29,7 @@ export const newPeerConnectionForClient = async (
   const usableRTCConfig = rtcConfig ?? {
     iceServers: [
       {
-        urls: 'stun:global.stun.twilio.com:3478',
+        urls: ['stun:global.stun.twilio.com:3478', 'stun:turn.viam.com:3478'],
       },
     ],
   };
